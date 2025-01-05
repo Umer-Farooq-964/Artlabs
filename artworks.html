@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Labs - All Artworks</title>
     <link rel="stylesheet" href="css/styles.css">
+    
 <style>
     .dropdown {
         position: relative;
@@ -23,6 +24,13 @@
         display: block;
         border-radius: 5px; /* Rounded corners */
         text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    /* Hover effect for the dropdown button */
+    .dropdown a:hover {
+        background-color: #444; /* Darken the button on hover */
+        color: #fff; /* Ensure the text stays white on hover */
     }
 
     .dropdown-content {
@@ -39,15 +47,18 @@
         display: block;
     }
     
+    /* Style for the items inside the dropdown */
     .dropdown-content a {
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-        color: rgb(247, 127, 72); /* White text */
+        color: rgb(247, 127, 72); /* Initial color */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
     }
     
+    /* Hover effect for the items inside the dropdown */
     .dropdown-content a:hover {
-        background-color: #ddd; /* Hover effect */
+        background-color: #ddd; /* Light grey background on hover */
         color: black; /* Change text color on hover */
     }
     
