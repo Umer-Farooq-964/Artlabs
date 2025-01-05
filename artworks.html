@@ -31,6 +31,11 @@
         .dropdown-content a:hover {
             background-color: #ddd;
         }
+        /* Style for centering the category dropdown */
+        .category-container {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -42,21 +47,21 @@
                 <a href="about.html">About Us</a>
                 <a href="artworks.html">All Artworks</a>
                 <a href="artist-portfolios.html">Artist's Portfolios</a>
-                
-              <div class="dropdown">
-                    <a href="#">Category</a>
-                    <div class="dropdown-content">
-                        <a href="#" onclick="filterArtworks('DominikG')">Dominik G</a>
-                        <a href="#" onclick="filterArtworks('RupamGrimoeuvre')">Rupam Grimoeuvre</a>
-                        <a href="#" onclick="filterArtworks('SoniaLai')">Sonia Lai</a>
-                        <a href="#" onclick="filterArtworks('Bryan Baltz')">Bryan Baltz</a>
-                        <a href="#" onclick="filterArtworks('RoadKill')">RoadKill</a>
-                    </div>
-                </div>
-        
-            </nav>
-        </div>
     </header>
+
+        <div class="category-container">
+        <div class="dropdown">
+            <a href="#">Category</a>
+            <div class="dropdown-content">
+                <a href="#" onclick="filterArtworks('DominikG')">Dominik G</a>
+                <a href="#" onclick="filterArtworks('RupamGrimoeuvre')">Rupam Grimoeuvre</a>
+                <a href="#" onclick="filterArtworks('SoniaLai')">Sonia Lai</a>
+                <a href="#" onclick="filterArtworks('Bryan Baltz')">Bryan Baltz</a>
+                <a href="#" onclick="filterArtworks('RoadKill')">RoadKill</a>
+            </div>
+        </div>
+    </div>
+    
     <main>
 
         <section class="art-gallery" id="artworks-section">
